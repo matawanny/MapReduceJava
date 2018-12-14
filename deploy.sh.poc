@@ -1,1 +1,1 @@
-cp /root/.m2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar /usr/book/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar
+cp /root/.m2/repository/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar /usr/book/repository/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar

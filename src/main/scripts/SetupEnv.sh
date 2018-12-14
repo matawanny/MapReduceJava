@@ -11,7 +11,7 @@ poc)
 	export REPO=/usr/book/repository
 	export IMPALA=ybgdev79
 	export BIGDATA_JAR=$REPO/com/yieldbook/embs/2.0.0/embs-2.0.0-shaded.jar
-	export HBASEJAVA_JAR=$REPO/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar
+	export HBASEJAVA_JAR=$REPO/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar
 	export T=`date "+[%Y-%m-%d %H:%M:%S]"`	
 	;;
 dev)
@@ -24,7 +24,7 @@ dev)
 	export REPO=/home2/repository
 	export IMPALA=ybgdldn2b
 	export BIGDATA_JAR=$REPO/com/yieldbook/embs/2.0.0/embs-2.0.0-shaded.jar
-	export HBASEJAVA_JAR=$REPO/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar
+	export HBASEJAVA_JAR=$REPO/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar
 	export T=`date "+[%Y-%m-%d %H:%M:%S]"`		
 	;;
 esac
