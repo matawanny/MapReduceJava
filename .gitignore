@@ -1,0 +1,65 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+./target
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+.myeclipse/
+*.csv
+*.dat
+./src/main/resources/log4j.properties
+./src/main/resources/core-site.xml
+./src/main/resources/hive-site.xml
+./src/main/resources/hdfs-site.xml
+./src/main/resources/hbase-site.xml
+./src/conf/core-site.xml
+./src/conf/hbase-site.xml
+./src/conf/hdfs-site.xml
+./deploy.sh

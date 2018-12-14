@@ -1,0 +1,423 @@
+{ 
+  "type" : "record",
+  "name" : "com.yieldbook.mortgage.hbase.bean.FhlmcLoan",
+  "fields" : [ {
+    "name" : "loan_identifier",
+    "type" : "string"
+  }, {
+    "name" : "loan_correction_indicator",
+    "type" : "string"
+  }, {
+    "name" : "prefix",
+    "type" : "string"
+  }, {
+    "name" : "security_identifier",
+    "type" : "string"
+  }, {
+    "name" : "cusip",
+    "type" : "string"
+  }, {
+    "name" : "mortgage_loan_amount",
+    "type" : [ "null", "double"],
+    "default" : null
+  }, {
+    "name" : "issuance_investor_loan_upb",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "current_investor_loan_upb",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "amortization_type",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "original_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "issuance_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "current_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "issuance_net_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "current_net_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "first_payment_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "maturity_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "loan_term",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "remaining_months_to_maturity",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "loan_age",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "ltv",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "cltv",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "dti",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "borrower_credit_score",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "f1",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "f2",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "f3",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "number_of_borrowers",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "first_time_home_buyer_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "loan_purpose",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "occupancy_status",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "number_of_units",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "property_type",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "channel",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "property_state",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "seller_name",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "servicer_name",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "mortgage_insurance_percent",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "mortgage_insurance_cancellation_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "government_insured_guarantee",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "assumability_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "interest_only_loan_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "interest_only_first_principal_and_interest_payment_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "months_to_amortization",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "prepayment_penalty_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "prepayment_penalty_total_term",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "index",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "mortgage_margin",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "mbs_pc_margin",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "interest_rate_adjustment_frequency",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "interest_rate_lookback",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "interest_rate_rounding_method",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "interest_rate_rounding_method_percent",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "convertibility_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "initial_fixed_rate_period",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "next_interest_rate_adjustment_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "months_to_next_interest_rate_adjustment_date",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "life_ceiling_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "life_ceiling_net_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "life_floor_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "life_floor_net_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "initial_interest_rate_cap_up_percent",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "initial_interest_rate_cap_down_percent",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "periodic_interest_rate_cap_up_percent",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "periodic_interest_rate_cap_down_percent",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "modification_program",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "modification_type",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "number_of_modifications",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "total_capitalized_amount",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "interest_bearing_mortgage_loan_amount",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "original_deferred_amount",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "current_deferred_upb",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "loan_age_as_of_modification",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "eltv",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "updated_credit_score",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "f4",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "interest_rate_step_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "initial_step_fixed_rate_period",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "total_number_of_steps",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "number_of_remaining_steps",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "next_step_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "terminal_step_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "terminal_step_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "step_rate_adjustment_frequency",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "next_step_rate_adjustment_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "months_to_next_step_rate_adjustment_date",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "periodic_step_cap_up_percent",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "origination_mortgage_loan_amount",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "origination_interest_rate",
+    "type" : [ "null", "double" ],
+    "default" : null
+  }, {
+    "name" : "origination_amortization_type",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "origination_interest_only_loan_indicator",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "origination_first_payment_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "origination_maturity_date",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "origination_loan_term",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "origination_ltv",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "origination_cltv",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "origination_debt_to_income_ratio",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "origination_credit_score",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "f5",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "f6",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "f7",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "origination_loan_purpose",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "origination_occupancy_status",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "origination_channel",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "days_delinquent",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "loan_performance_history",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "as_of_date",
+    "type" : "long"
+  } ]
+}

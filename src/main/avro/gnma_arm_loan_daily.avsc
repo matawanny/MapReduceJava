@@ -1,0 +1,50 @@
+{
+	"type": "record",
+	"name": "gnma_arm_loan",
+	"fields": [{
+		"name": "cusip",
+		"type": "string"
+	}, {
+		"name": "loan_seq_num",
+		"type": "long"
+	}, {
+		"name": "index_type",
+		"type": "string"
+	}, {
+		"name": "lookback",
+		"type": ["null", "int"]
+	}, {
+		"name": "interest_chg_date",
+		"type": ["null", "int"]
+	}, {
+		"name": "init_rate_cap",
+		"type": ["null", "double"]
+	}, {
+		"name": "sub_init_rate_cap",
+		"type": ["null", "double"]
+	}, {
+		"name": "life_time_rate_cap",
+		"type": ["null", "double"]
+	}, {
+		"name": "next_interest_rate_ceiling",
+		"type": ["null", "double"]
+	}, {
+		"name": "life_time_rate_ceiling",
+		"type": ["null", "double"]
+	}, {
+		"name": "life_time_rate_floor",
+		"type": ["null", "double"]
+	}, {
+		"name": "prospect_interest_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "last_chg_date",
+		"type": "int"
+	}, {
+		"name": "eff_date",
+		"type": ["null", "int"]
+	}, {
+		"name": "as_of_date",
+		"type": "int"
+	}]
+}

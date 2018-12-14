@@ -1,0 +1,48 @@
+CREATE TABLE fhlmc_arm_loan_monthly(
+loan_identifier varchar NOT NULL PRIMARY KEY,
+cusip varchar,
+convertible_flag varchar,
+rate_adjmt_freq int,
+initial_period int,
+next_adjmt_date smalldatetime,
+lookback int,
+gross_margin float,
+net_margin float,
+net_max_life_rate float,
+max_life_rate float,
+init_cap_up float,
+init_cap_dn float,
+periodic_cap float,
+months_to_adjust int,
+index_desc varchar,
+last_chg_date smalldatetime,
+eff_date smalldatetime);
+
+
+
+CREATEfhlmc_mod_loan_monthly(
+loan_identifier varchar,
+cusip varchar,
+eff_date smalldatetime,
+correction_flag varchar,
+product_type varchar,
+origin_loan_purpose varchar,
+origin_tpo_flag varchar,
+origin_occupancy_status varchar,
+origin_credit_score int,
+origin_loan_term int,
+origin_ltv int,
+origin_io_flag varchar,
+origin_first_paym_date smalldatetime,
+origin_maturity_date smalldatetime,
+origin_note_rate float,
+origin_loan_amt float,
+origin_cltv int,
+origin_dti int,
+origin_product_type varchar,
+mod_date_loan_age int,
+mod_program varchar,
+mod_type varchar,
+num_of_mods int,
+tot_capitalized_amt float,last_chg_date bigint,int_bear_loan_amt float,deferred_amt float,deferred_upb float,rate_step_ind varchar,tot_steps int,rem_steps int,initial_fixed_per int,rate_adj_freq int,periodic_cap_up float,months_to_adj int,next_step_rate float,next_adj_date bigint,terminal_step_rate float,terminal_step_date bigint)
+);

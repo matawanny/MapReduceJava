@@ -1,0 +1,34 @@
+Writable is an interface i Hadoop. It acts as wrapper to primitive data type of Java. 
+All the Mapreduce datatypes must implement WritableComparable interface
+
+Java Primitive 	
+Boolean  BooleanWritable (BooleanWritable is a class implements WritableComparable interface)
+Byte ByteWriteable
+Short ShortWritable
+Int IntWritable
+Float FloatWritable
+Long LongWritable
+Double DoubleWritable
+
+String Text
+Object ObjectWritable
+
+User defined PojoWritable implement Comparable Interface
+
+Writable interface Can be used as only Values (Because values do need to be compared)
+WritableComparable Can be used as both keys and values (Because keys need to be compared in partition and shuffling stage)
+
+public interface Writable{
+	void redFields(DataInput in);
+	void write(DataOutput out);
+}
+
+public interface WritableComparable{
+	void redFields(DataInput in);
+	void write(DataOutput out);
+	int compareTo(WritableComparable o);
+}
+
+Transformation needs Serialization
+Origianl Structured Data --> Serialization --> Hadoop binary format --> Deserialization --> Origianl Structured Data
+

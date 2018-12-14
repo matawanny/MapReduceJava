@@ -1,0 +1,122 @@
+{
+	"type": "record",
+	"name": "fnma_mod_loan",
+	"fields": [{
+		"name": "loan_identifier",
+		"type": "long"
+	}, {
+		"name": "cusip",
+		"type": "string"
+	}, {
+		"name": "eff_date",
+		"type": "int"
+	}, {
+		"name": "last_chg_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "days_delinquent",
+		"type": "string"
+	}, {
+		"name": "loan_performance_history",
+		"type": "string"
+	}, {
+		"name": "mod_date_loan_age",
+		"type": ["null", "int"]
+	}, {
+		"name": "mod_program",
+		"type": "string"
+	}, {
+		"name": "mod_type",
+		"type": "string"
+	}, {
+		"name": "num_of_mods",
+		"type": ["null", "int"]
+	}, {
+		"name": "tot_capitalized_amt",
+		"type": ["null", "double"]
+	}, {
+		"name": "origin_loan_amt",
+		"type": ["null", "double"]
+	}, {
+		"name": "deferred_upb",
+		"type": ["null", "double"]
+	}, {
+		"name": "rate_step_ind",
+		"type": "string"
+	}, {
+		"name": "initial_fixed_per",
+		"type": ["null", "int"]
+	}, {
+		"name": "tot_steps",
+		"type": ["null", "int"]
+	}, {
+		"name": "rem_steps",
+		"type": ["null", "int"]
+	}, {
+		"name": "next_step_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "terminal_step_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "terminal_step_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "rate_adj_freq",
+		"type": ["null", "int"]
+	}, {
+		"name": "months_to_adj",
+		"type": ["null", "int"]
+	}, {
+		"name": "next_adj_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "periodic_cap_up",
+		"type": ["null", "double"]
+	}, {
+		"name": "origin_channel",
+		"type": "string"
+	}, {
+		"name": "origin_note_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "origin_upb",
+		"type": ["null", "double"]
+	}, {
+		"name": "origin_loan_term",
+		"type": ["null", "int"]
+	}, {
+		"name": "origin_first_paym_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "origin_maturity_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "origin_ltv",
+		"type": ["null", "int"]
+	}, {
+		"name": "origin_cltv",
+		"type": ["null", "int"]
+	}, {
+		"name": "origin_dti",
+		"type": ["null", "int"]
+	}, {
+		"name": "origin_credit_score",
+		"type": ["null", "int"]
+	}, {
+		"name": "origin_loan_purpose",
+		"type": "string"
+	}, {
+		"name": "origin_occupancy_status",
+		"type": "string"
+	}, {
+		"name": "origin_product_type",
+		"type": "string"
+	}, {
+		"name": "origin_io_flag",
+		"type": "string"
+	}, {
+		"name": "as_of_date",
+		"type": "int"
+	}]
+}

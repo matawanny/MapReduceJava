@@ -1,0 +1,1 @@
+cp /var/lib/oozie/.m2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar /home2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar

@@ -1,0 +1,5 @@
+[ {
+  "name" : "as_of_date_copy",
+  "source" : "as_of_date",
+  "type" : "identity"
+} ]

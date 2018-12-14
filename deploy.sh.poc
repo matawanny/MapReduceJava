@@ -1,0 +1,1 @@
+cp /root/.m2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar /usr/book/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jar

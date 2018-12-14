@@ -1,0 +1,524 @@
+[ {
+  "source" : "loan_identifier",
+  "type" : "key"
+}, {
+  "source" : "loan_correction_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "loan_correction_indicator"
+}, {
+  "source" : "prefix",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "prefix"
+}, {
+  "source" : "security_identifier",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "security_identifier"
+}, {
+  "source" : "cusip",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "cusip"
+}, {
+  "source" : "mortgage_loan_amount",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "mortgage_loan_amount"
+}, {
+  "source" : "issuance_investor_loan_upb",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "issuance_investor_loan_upb"
+}, {
+  "source" : "current_investor_loan_upb",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "current_investor_loan_upb"
+}, {
+  "source" : "amortization_type",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "amortization_type"
+}, {
+  "source" : "original_interest_rate",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "original_interest_rate"
+}, {
+  "source" : "issuance_interest_rate",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "issuance_interest_rate"
+}, {
+  "source" : "current_interest_rate",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "current_interest_rate"
+}, {
+  "source" : "issuance_net_interest_rate",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "issuance_net_interest_rate"
+}, {
+  "source" : "current_net_interest_rate",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "current_net_interest_rate"
+}, {
+  "source" : "first_payment_date",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "first_payment_date"
+}, {
+  "source" : "maturity_date",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "maturity_date"
+}, {
+  "source" : "loan_term",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "loan_term"
+}, {
+  "source" : "remaining_months_to_maturity",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "remaining_months_to_maturity"
+}, {
+  "source" : "loan_age",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "loan_age"
+}, {
+  "source" : "ltv",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "ltv"
+}, {
+  "source" : "cltv",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "cltv"
+}, {
+  "source" : "dti",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "dti"
+}, {
+  "source" : "borrower_credit_score",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "borrower_credit_score"
+}, {
+  "source" : "f1",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "f1"
+}, {
+  "source" : "f2",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "f2"
+}, {
+  "source" : "f3",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "f3"
+}, {
+  "source" : "number_of_borrowers",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "number_of_borrowers"
+}, {
+  "source" : "first_time_home_buyer_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "first_time_home_buyer_indicator"
+}, {
+  "source" : "loan_purpose",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "loan_purpose"
+}, {
+  "source" : "occupancy_status",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "occupancy_status"
+}, {
+  "source" : "number_of_units",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "number_of_units"
+}, {
+  "source" : "property_type",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "property_type"
+}, {
+  "source" : "channel",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "channel"
+}, {
+  "source" : "property_state",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "property_state"
+}, {
+  "source" : "seller_name",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "seller_name"
+}, {
+  "source" : "servicer_name",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "servicer_name"
+}, {
+  "source" : "mortgage_insurance_percent",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "mortgage_insurance_percent"
+}, {
+  "source" : "mortgage_insurance_cancellation_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "mortgage_insurance_cancellation_indicator"
+}, {
+  "source" : "government_insured_guarantee",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "government_insured_guarantee"
+}, {
+  "source" : "assumability_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "assumability_indicator"
+}, {
+  "source" : "interest_only_loan_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "interest_only_loan_indicator"
+}, {
+  "source" : "interest_only_first_principal_and_interest_payment_date",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "interest_only_first_principal_and_interest_payment_date"
+}, {
+  "source" : "months_to_amortization",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "months_to_amortization"
+}, {
+  "source" : "prepayment_penalty_indicator",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "prepayment_penalty_indicator"
+}, {
+  "source" : "prepayment_penalty_total_term",
+  "type" : "column",
+  "family" : "loan",
+  "qualifier" : "prepayment_penalty_total_term"
+}, {
+  "source" : "index",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "index"
+}, {
+  "source" : "mortgage_margin",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "mortgage_margin"
+}, {
+  "source" : "mbs_pc_margin",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "mbs_pc_margin"
+}, {
+  "source" : "interest_rate_adjustment_frequency",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "interest_rate_adjustment_frequency"
+}, {
+  "source" : "interest_rate_lookback",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "interest_rate_lookback"
+}, {
+  "source" : "interest_rate_rounding_method",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "interest_rate_rounding_method"
+}, {
+  "source" : "interest_rate_rounding_method_percent",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "interest_rate_rounding_method_percent"
+}, {
+  "source" : "convertibility_indicator",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "convertibility_indicator"
+}, {
+  "source" : "initial_fixed_rate_period",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "initial_fixed_rate_period"
+}, {
+  "source" : "next_interest_rate_adjustment_date",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "next_interest_rate_adjustment_date"
+}, {
+  "source" : "months_to_next_interest_rate_adjustment_date",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "months_to_next_interest_rate_adjustment_date"
+}, {
+  "source" : "life_ceiling_interest_rate",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "life_ceiling_interest_rate"
+}, {
+  "source" : "life_ceiling_net_interest_rate",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "life_ceiling_net_interest_rate"
+}, {
+  "source" : "life_floor_interest_rate",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "life_floor_interest_rate"
+}, {
+  "source" : "life_floor_net_interest_rate",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "life_floor_net_interest_rate"
+}, {
+  "source" : "initial_interest_rate_cap_up_percent",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "initial_interest_rate_cap_up_percent"
+}, {
+  "source" : "initial_interest_rate_cap_down_percent",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "initial_interest_rate_cap_down_percent"
+}, {
+  "source" : "periodic_interest_rate_cap_up_percent",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "periodic_interest_rate_cap_up_percent"
+}, {
+  "source" : "periodic_interest_rate_cap_down_percent",
+  "type" : "column",
+  "family" : "arm_loan",
+  "qualifier" : "periodic_interest_rate_cap_down_percent"
+}, {
+  "source" : "modification_program",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "modification_program"
+}, {
+  "source" : "modification_type",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "modification_type"
+}, {
+  "source" : "number_of_modifications",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "number_of_modifications"
+}, {
+  "source" : "total_capitalized_amount",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "total_capitalized_amount"
+}, {
+  "source" : "interest_bearing_mortgage_loan_amount",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "interest_bearing_mortgage_loan_amount"
+}, {
+  "source" : "original_deferred_amount",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "original_deferred_amount"
+}, {
+  "source" : "current_deferred_upb",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "current_deferred_upb"
+}, {
+  "source" : "loan_age_as_of_modification",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "loan_age_as_of_modification"
+}, {
+  "source" : "eltv",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "eltv"
+}, {
+  "source" : "updated_credit_score",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "updated_credit_score"
+}, {
+  "source" : "f4",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "f4"
+}, {
+  "source" : "interest_rate_step_indicator",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "interest_rate_step_indicator"
+}, {
+  "source" : "initial_step_fixed_rate_period",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "initial_step_fixed_rate_period"
+}, {
+  "source" : "total_number_of_steps",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "total_number_of_steps"
+}, {
+  "source" : "number_of_remaining_steps",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "number_of_remaining_steps"
+}, {
+  "source" : "next_step_rate",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "next_step_rate"
+}, {
+  "source" : "terminal_step_rate",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "terminal_step_rate"
+}, {
+  "source" : "terminal_step_date",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "terminal_step_date"
+}, {
+  "source" : "step_rate_adjustment_frequency",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "step_rate_adjustment_frequency"
+}, {
+  "source" : "next_step_rate_adjustment_date",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "next_step_rate_adjustment_date"
+}, {
+  "source" : "months_to_next_step_rate_adjustment_date",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "months_to_next_step_rate_adjustment_date"
+}, {
+  "source" : "periodic_step_cap_up_percent",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "periodic_step_cap_up_percent"
+}, {
+  "source" : "origination_mortgage_loan_amount",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_mortgage_loan_amount"
+}, {
+  "source" : "origination_interest_rate",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_interest_rate"
+}, {
+  "source" : "origination_amortization_type",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_amortization_type"
+}, {
+  "source" : "origination_interest_only_loan_indicator",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_interest_only_loan_indicator"
+}, {
+  "source" : "origination_first_payment_date",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_first_payment_date"
+}, {
+  "source" : "origination_maturity_date",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_maturity_date"
+}, {
+  "source" : "origination_loan_term",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_loan_term"
+}, {
+  "source" : "origination_ltv",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_ltv"
+}, {
+  "source" : "origination_cltv",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_cltv"
+}, {
+  "source" : "origination_debt_to_income_ratio",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_debt_to_income_ratio"
+}, {
+  "source" : "origination_credit_score",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_credit_score"
+}, {
+  "source" : "f5",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "f5"
+}, {
+  "source" : "f6",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "f6"
+}, {
+  "source" : "f7",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "f7"
+}, {
+  "source" : "origination_loan_purpose",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_loan_purpose"
+}, {
+  "source" : "origination_occupancy_status",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_occupancy_status"
+}, {
+  "source" : "origination_channel",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "origination_channel"
+}, {
+  "source" : "days_delinquent",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "days_delinquent"
+}, {
+  "source" : "loan_performance_history",
+  "type" : "column",
+  "family" : "mod_loan",
+  "qualifier" : "loan_performance_history"
+} ]

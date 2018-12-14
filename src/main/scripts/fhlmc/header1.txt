@@ -1,0 +1,159 @@
+1. Hadoop 1
+public class MyMypper extends MapReduceBase implements Mapper<LongWritable, Text, 
+Text, IntWritable>
+{
+ 
+@override
+public void map(LongWritable key, Text Value, OutputCollector<Text, IntWritable>output,
+Reporter reporter) throws IOException
+{
+ <logic>
+ output.collect(key, value);
+
+} 
+}}
+
+MAPREUDCE Class Methods 
+void setup(Jobconf Obj) //Object of Drive class. Must call before map method.
+
+void cleanup //called before map task is completed
+
+2 Hadoop 2
+public class My Mapper extends Mapper<LongWriteable, Text, Text, IntWritable>
+{
+ public void map(LongWritable key, Text value, Context obj) throws IOExcepton
+ {
+ 	<logic>
+ 	obj.write(key, value);
+ 
+ }
+ }}
+ 
+ 3. Type of Mapper
+ Identity Mapper -- Default mapper used to write the output same as input.
+ Implementation - Mapper<K, V, K, V>
+ 
+ Inverse Mapper -- Used to reverse the Key Value pair
+ Implementation - Mapper<K, V, V, K>
+
+ Regex Mapper -- Provides a way to user regular expression in Map function.
+ Implementation - Mapper<K, Text, Text, LongWritable>
+ 
+  Token Counter Mapper -- Used to generate token counts for key.
+ Implementation - Mapper<K, Text, Text, LongWritable>
+ 4. Hadoop 1
+ Mapper Output<K,V>-->Partitioner output<K, List[V]>-->Reducer
+ 
+ public calss MyReducer extends MapReducerBase implements Reducer<Text, IntWritable, 
+ Test, IntWritable>
+ {
+ public void reduce(Text key, Iterator<IntWritable>values, OutputCollect<Text, IntWriter>output,
+ Reporter reporter) throws IOException
+ {
+ 	<logic>
+ 	output.collect(key, value);
+  }
+ }}
+ 
+ 5. Hadoop 2
+  public calss MyReducer extends Reducer<Text, IntWritable, Test, IntWritable>
+ {
+ public void reduce(Text key, Iterator<IntWritable>values, Context obj) throws IOException
+ {
+ 	<logic>
+ 	obj.write(key, value);
+  }
+ }}
+ }
+Identity Reducer - Default reducer used to write the output same as input
+Implementation -Reducer<Key, List[Values], Key, List[values]> 
+Long Sum Reducer - User to determine sume of all values corresponding to a given key.
+Implementation -Reducer<Key, List[Values], Key, LongWritable> 
+ 
+ 6. Driver
+ 
+ public class MyDriver{
+ public static void main(String[] args) throws Exception{
+ 
+ JobConf conf = new JobConf(MyDriver.class);  //MR 1
+ 
+ conf.setJobName("SampleJobName");
+ //Set the output Key type for the Mapper
+ conf.setMapOutputKeyClass(Text.class);
+ //Set the output value  for the Mapper
+ conf.setMapOutputValueClass(IntWritable.class);
+ //Set the output Key type for the Reducer
+ conf.setOutputKeyclass(Text.class);
+ //Set the output value type fo the Reducer
+ conf.setOutputValueClass(IntWritable.class);
+ //Set the Mapper class
+ conf.setMapperClass(MyMapper.class);
+ //Set the Reducer class 
+ conf.setReducerClass(Reducer.class);
+ //Set the format of the input for the program
+ conf.setIutputFormat(TextIutputFormat.class);
+  //Set the format of the output for the program
+ conf.setOutputFormat(TextOutputFormat.class);
+ //Set the location from where the Mapper will read the input
+ FileinputFormat.setInputPaths(conf,new Path(args[0]));
+ //Set the location where the Reducer will write the output
+ FileOutputformat.setOutputPath(conf, newPath(args[1]));
+ 
+ //Run the job on the cluster
+ JobClient.runjob(conf);
+ 
+ }}
+ 
+7. Partitioner Class
+public abstract class Partitioner<KEY, VALUE>extends Object
+{
+  // numbPartitons is the total available partitions = total available of reducers.
+  // return partition id. Each partition has a unique indentifier number. Linking to the reducer id
+  public abstract int getPartition(KEY key, VALUE value, int numPartitions){}
+ 
+}
+Default HashPartitioner Class
+Public class HashPartitoner<K, V> extends Partitioner<K, V>
+{
+public int getPartition(K key, V value, int numPartitions){
+	return(key.hashCode()$Integer.MAX_VALUE)%numPartions
+	
+}
+
+}
+
+8. io.sort.mb (default 100mb)
+io.sort.splil.percent.property (default 80%)
+mapred.local.dir
+ 
+ 9. Writable is an Interface in Hadoop. It acts as wrapper to primitive data type of Java.
+ All the MapReduce datatypes must implements Writable interface
+ String -> Text Object->ObjectWritable Int -> IntWritable Long->LongWritble
+ 
+ public void map(LongWritable key, Text value, Context con)throws 
+ IOException, InterruptedExeption
+ {
+ String line=value.toString();
+ String words=line.split(",");
+ for(String word: words)
+ 	{
+ 	Text outputKey=new Text(word.toUpperCase().trim());
+ 	IntWritable outputValue=new IntWritable(1);
+ 	con.write(outputKey,outputVale);
+    }
+ }}
+ 
+ Writable Interface -->   	Can be used as only Values
+ WritableComparable --> Can be used as both keys and values
+ 	}
+ }
+ 
+
+hadoop jar /root/.m2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jarr com.yieldbook.mortgage.hadoop.mapReduce.WordCount /user/root/word /user/root/wc
+ 
+ 
+hadoop jar target/ com.cloudera.examples.hbase.bulkimport.Driver <hdfsDirectory>/file1.txt \ <hdfsDirectory>/<outputname>/ <tablename>
+
+hadoop jar /root/.m2/repository/com/yieldbook/HBaseJava/2.0.0/HBaseJava-2.0.0-shaded.jarr com.yieldbook.mortgage.hbase.mapReduce.Main \
+  
+ 

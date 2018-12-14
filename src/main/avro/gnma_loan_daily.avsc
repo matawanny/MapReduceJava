@@ -1,0 +1,122 @@
+{
+	"type": "record",
+	"name": "gnma_loan",
+	"fields": [{
+		"name": "cusip",
+		"type": "string"
+	}, {
+		"name": "eff_date",
+		"type": "string"
+	}, {
+		"name": "loan_seq_num",
+		"type": "long"
+	}, {
+		"name": "gnma_issuer_num",
+		"type": ["null", "int"]
+	}, {
+		"name": "agency",
+		"type": "string"
+	}, {
+		"name": "loan_purpose",
+		"type": "string"
+	}, {
+		"name": "refi_type",
+		"type": ["null", "int"]
+	}, {
+		"name": "first_payment_date",
+		"type": ["null", "int"]
+	}, {
+		"name": "maturity_date",
+		"type": ["null", "int"]
+	}, {
+		"name": "note_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_loan_amt",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_upb",
+		"type": ["null", "double"]
+	}, {
+		"name": "current_upb",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_loan_term",
+		"type": ["null", "int"]
+	}, {
+		"name": "loan_age",
+		"type": ["null", "int"]
+	}, {
+		"name": "rem_months_to_maturity",
+		"type": ["null", "int"]
+	}, {
+		"name": "months_delinq",
+		"type": ["null", "int"]
+	}, {
+		"name": "months_prepaid",
+		"type": ["null", "int"]
+	}, {
+		"name": "gross_margin",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_ltv",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_cltv",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_dti",
+		"type": ["null", "double"]
+	}, {
+		"name": "credit_score",
+		"type": ["null", "int"]
+	}, {
+		"name": "down_paym_assist",
+		"type": "string"
+	}, {
+		"name": "buy_down_status",
+		"type": "string"
+	}, {
+		"name": "upfront_mip",
+		"type": ["null", "double"]
+	}, {
+		"name": "annual_mip",
+		"type": ["null", "double"]
+	}, {
+		"name": "num_borrowers",
+		"type": "string"
+	}, {
+		"name": "first_time_buyer",
+		"type": "string"
+	}, {
+		"name": "num_units",
+		"type": "string"
+	}, {
+		"name": "state",
+		"type": "string"
+	}, {
+		"name": "msa",
+		"type": "string"
+	}, {
+		"name": "tpo_flag",
+		"type": "string"
+	}, {
+		"name": "curr_month_liq_flag",
+		"type": "string"
+	}, {
+		"name": "removal_reason",
+		"type": ["null", "int"]
+	}, {
+		"name": "last_chg_date",
+		"type": "int"
+	}, {
+		"name": "loan_orig_date",
+		"type": ["null", "int"]
+	}, {
+		"name": "seller_issuer_id",
+		"type": "string"
+	}, {
+		"name": "as_of_date",
+		"type": "int"
+	}]
+}

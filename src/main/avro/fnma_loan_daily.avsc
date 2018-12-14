@@ -1,0 +1,110 @@
+{
+	"type": "record",
+	"name": "fnma_loan",
+	"fields": [{
+		"name": "loan_identifier",
+		"type": "long"
+	}, {
+		"name": "cusip",
+		"type": "string"
+	}, {
+		"name": "prod_type_ind",
+		"type": "string"
+	}, {
+		"name": "loan_purpose",
+		"type": "string"
+	}, {
+		"name": "occupancy_type",
+		"type": ["null", "string"]
+	}, {
+		"name": "num_units",
+		"type": "string"
+	}, {
+		"name": "state",
+		"type": "string"
+	}, {
+		"name": "credit_score",
+		"type": ["null", "int"]
+	}, {
+		"name": "orig_loan_term",
+		"type": ["null", "int"]
+	}, {
+		"name": "orig_ltv",
+		"type": ["null", "int"]
+	}, {
+		"name": "prepay_premium_term",
+		"type": "string"
+	}, {
+		"name": "io_flag",
+		"type": "string"
+	}, {
+		"name": "first_payment_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "first_pi_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "maturity_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "orig_note_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "note_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "net_note_rate",
+		"type": ["null", "double"]
+	}, {
+		"name": "orig_loan_size",
+		"type": ["null", "double"]
+	}, {
+		"name": "loan_age",
+		"type": ["null", "int"]
+	}, {
+		"name": "rem_months_to_maturity",
+		"type": ["null", "int"]
+	}, {
+		"name": "months_to_amortize",
+		"type": ["null", "int"]
+	}, {
+		"name": "servicer",
+		"type": ["null", "string"]
+	}, {
+		"name": "seller",
+		"type": ["null", "string"]
+	}, {
+		"name": "last_chg_date",
+		"type": ["null", "long"]
+	}, {
+		"name": "current_upb",
+		"type": ["null", "double"]
+	}, {
+		"name": "eff_date",
+		"type": "int"
+	}, {
+		"name": "orig_dti",
+		"type": ["null", "int"]
+	}, {
+		"name": "first_time_buyer",
+		"type": "string"
+	}, {
+		"name": "ins_percent",
+		"type": ["null", "int"]
+	}, {
+		"name": "num_borrowers",
+		"type": ["null", "int"]
+	}, {
+		"name": "orig_cltv",
+		"type": ["null", "int"]
+	}, {
+		"name": "property_type",
+		"type": "string"
+	}, {
+		"name": "tpo_flag",
+		"type": "string"
+	}, {
+		"name": "as_of_date",
+		"type": "int"
+	}]
+}
