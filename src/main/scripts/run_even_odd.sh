@@ -21,7 +21,7 @@ cd /usr/book/data/evenodd
 
 hadoop fs -copyFromLocal evenodd.txt /user/oozie/source/mapreducejava/evenodd
 
-inputPath='/user/oozie/source/mapreduce/evenodd/evenodd.txt'
-outputPath='/user/oozie/source/mapreduce/evenodd/output'
+inputPath='/user/oozie/source/mapreducejava/evenodd/evenodd.txt'
+outputPath='/user/oozie/source/mapreducejava/evenodd/output'
 
 hadoop jar $HBASEJAVA_JAR com.yieldbook.mortgage.hadoop.mapReduce.evenodd.MyDriver $inputPath $outputPath
