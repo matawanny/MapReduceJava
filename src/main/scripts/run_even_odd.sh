@@ -19,9 +19,9 @@ hdfs_folder_clean "source/mapreducejava/evenodd/output"
 
 cd /usr/book/data/evenodd
 
-hadoop fs -copyFromLocal evenodd.txt /user/oozie/mapreducejava/evenodd
+hadoop fs -copyFromLocal evenodd.txt /user/oozie/source/mapreducejava/evenodd
 
 inputPath='/user/oozie/source/mapreduce/evenodd/evenodd.txt'
 outputPath='/user/oozie/source/mapreduce/evenodd/output'
 
-hadoop jar $HBASEJAVA_JAR com.yieldbook.mortgage.hadoop.mapReduce.evenood.MyDriver $inputPath $outputPath
+hadoop jar $HBASEJAVA_JAR com.yieldbook.mortgage.hadoop.mapReduce.evenodd.MyDriver $inputPath $outputPath
