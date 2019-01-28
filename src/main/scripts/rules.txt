@@ -1,0 +1,6 @@
+Fraud points:
+
+1. Assign 1 fraud point to a transaction/customer whose (refund_date-receiving_date)>10 days
+
+2. 10 fraud points to the customer whose return rate is more than or equal to 50% where 
+return_rate=(no.of orders returned)/(no. of orders by a customer) * 100 

@@ -1,4 +1,4 @@
-package com.yieldbook.mortgage.hadoop.mapReduce;
+package com.yieldbook.mortgage.hadoop.mapReduce.wordcount;
 
 import java.io.IOException;
 
