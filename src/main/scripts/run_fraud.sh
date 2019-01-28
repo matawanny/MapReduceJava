@@ -18,10 +18,7 @@ hdfs_folder_clean "source/mapreducejava/fraud/output"
 
 export MAPREDUCEJAVA_JAR=$REPO/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar
 
-
-cd /usr/book/data/evenodd
-
-hadoop fs -put fraud.txt /user/oozie/source/mapreducejava/fraud
+hadoop fs -put /usr/book/app/MapReduceJava/data/fraud/fraud.txt /user/oozie/source/mapreducejava/fraud
 
 inputPath='/user/oozie/source/mapreducejava/fraud/fraud.txt'
 outputPath='/user/oozie/source/mapreducejava/fraud/output'
