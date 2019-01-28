@@ -16,7 +16,7 @@ hdfs_folder_check "source/mapreducejava"
 hdfs_folder_clean "source/mapreducejava/fraud"
 hdfs_folder_clean "source/mapreducejava/fraud/output"
 
-export $MAPREDUCEJAVA_JAR=$REPO/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar
+export MAPREDUCEJAVA_JAR=$REPO/com/yieldbook/MapReduceJava/2.0.0/MapReduceJava-2.0.0-shaded.jar
 
 
 cd /usr/book/data/evenodd
